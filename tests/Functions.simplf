@@ -1,0 +1,96 @@
+// Functions 
+
+// Factorial Function
+
+fun fact(n)
+{
+    var ret = 0;
+    if(n == 1)
+    {
+        ret = 1;
+    }
+    else{
+        ret = n*fact(n-1);
+    }
+    ret;
+}
+
+print fact(3);
+
+
+fun createCounter()
+{
+    var c = 0;
+    fun counter()
+    {
+        c = c + 1;
+        print c;
+    }
+    counter;
+}
+var count = createCounter();
+count();
+count();
+
+fun test(func)
+{
+    func();
+}
+
+test(count);
+
+
+
+
+fun mk_pair(a, b) {
+    fun get_val(i) {
+        var ret = 0;
+        if (i == 0) {
+            ret = a;
+        } else {
+            ret = b;
+        }
+        ret ;
+    }
+    get_val;
+}
+
+fun get_first(p) {
+    p(0);
+}
+
+fun get_second(p) {
+    p(1);
+}
+
+fun bank_account() {
+    var balance = 0;
+    fun deposit(amount) {
+        balance = balance + amount;
+        print(balance);
+    }
+
+    fun withdraw(amount) {
+        balance = balance - amount;
+        print(balance);
+    }
+
+    mk_pair(deposit, withdraw);
+}
+
+var b1 = bank_account();
+var deposit_b1 = get_first(b1);
+var withdraw_b1 = get_second(b1);
+
+deposit_b1(100);
+withdraw_b1(25); 
+withdraw_b1(3);
+
+var b2 = bank_account();
+var deposit_b2 = get_first(b2);
+var withdraw_b2 = get_second(b2);
+
+deposit_b2(500);
+withdraw_b2(250);
+
+withdraw_b1(5);

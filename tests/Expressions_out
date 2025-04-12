@@ -1,0 +1,29 @@
+Value of a: 10
+Value of b: 3
+----
+
+Value of a + b:13
+Value of a - b:7
+Value of a * b:30
+Value of a / b:3.3333333333333335
+Value of -a: -10
+Value of b after assignment: 4
+----
+
+Value of a > b: true
+Value of a >= b: true
+Value of a < b: false
+Value of a <= b: false
+Value of a == b: false
+Value of a != b: true
+----
+
+Converted to string : 5
+Value of str1 = str2: false
+Value of str1 = str3: true
+----
+
+Value of not a: false
+Value of not b: false
+----
+Mess around a bit and try different expressions for yourself ;.

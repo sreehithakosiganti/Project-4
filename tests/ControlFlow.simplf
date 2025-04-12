@@ -1,0 +1,49 @@
+var a = 2;
+if(a > 2)
+{
+    print "Greater than 2";
+}
+else if(a < 2)
+{
+    print "Less than 2";
+}
+else
+{
+    print "Equal to 2";
+}
+
+if (a == 2) {
+    print "Equal to 2 again";
+}
+
+print "---";
+print "While";
+print "";
+var i = 0;
+
+while(i< 10)
+{
+    print i;
+    i = i + 1;
+}
+
+print "---";
+print "For";
+print "";
+
+for(i = 0; i < 5; i=i+1) {
+    print i;
+}
+
+print "---";
+i = 0;
+var j = 0;
+while(i < 10) {
+    for(j = 0; j < 10; j = j + 1) {
+        print "i:";
+        print i;
+        print "j:";
+        print j;
+    }
+    i = i + 1;
+}

@@ -1,0 +1,25 @@
+var x = 1;
+x = x + 1;
+
+var y = 3 + x;
+
+print "Should output 2:";
+print x;
+
+{
+    var x = 1;
+    print "Should output 1:";
+    print x;
+
+    print "Should output 5:";
+    print y;
+
+    y = y - 1;
+}
+
+print "Should output 2:";
+print x;
+
+print "Should output 4:";
+print y;
+

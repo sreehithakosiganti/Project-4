@@ -1,0 +1,52 @@
+
+
+var a = 10;
+var b = 3; 
+
+print "Value of a: " + a;
+print "Value of b: " + b;
+
+print "----";
+print "";
+
+print "Value of a + b:" + (a + b);
+print "Value of a - b:" + (a - b);
+print "Value of a * b:" + a * b;
+print "Value of a / b:" + a/b;
+print "Value of -a: " + -a;
+print "Value of b after assignment: " + (b = 4); 
+
+print "----";
+print "";
+
+print "Value of a > b: " + (a > b);
+print "Value of a >= b: " + (a >= b);
+print "Value of a < b: " + (a < b);
+print "Value of a <= b: " + (a <= b);
+print "Value of a == b: " + (a == b);
+print "Value of a != b: " + (a != b);
+
+print "----";
+print ""; 
+
+
+print "Converted to string : " + 5;
+
+var str1 = "Test1";
+var str2 = "Test2";
+var str3 = "Test1";
+
+print "Value of str1 = str2: " + (str1 == str2);
+print "Value of str1 = str3: " + (str1 == str3);
+
+print "----";
+print "";
+
+a = true;
+b = 0;
+
+print "Value of not a: " + !a; 
+print "Value of not b: " +  !b; 
+
+print "----";
+print "Mess around a bit and try different expressions for yourself ;.";
